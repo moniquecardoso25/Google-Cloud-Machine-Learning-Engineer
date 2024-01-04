@@ -18,11 +18,30 @@ You will need to make sure you have:
 
 Answer:
 
-bq mk lab_191
-gsutil mb gs://qwiklabs-gcp-00-9e1d8866bc92-marking
+bq mk lab_515
+gsutil mb gs://qwiklabs-gcp-04-a80d95a1806a-marking
 gsutil cp gs://cloud-training/gsp323/lab.csv .
 gsutil cp gs://cloud-training/gsp323/lab.schema .
 cat lab.schema
+
+
+[
+{"type":"STRING","name":"guid"},
+{"type":"BOOLEAN","name":"isActive"},
+{"type":"STRING","name":"firstname"},
+{"type":"STRING","name":"surname"},
+{"type":"STRING","name":"company"},
+{"type":"STRING","name":"email"},
+{"type":"STRING","name":"phone"},
+{"type":"STRING","name":"address"},
+{"type":"STRING","name":"about"},
+{"type":"TIMESTAMP","name":"registered"},
+{"type":"FLOAT","name":"latitude"},
+{"type":"FLOAT","name":"longitude"}
+]
+
+
+
 
 
 ####  Create table in BigQuery
