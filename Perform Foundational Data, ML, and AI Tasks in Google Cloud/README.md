@@ -5,7 +5,7 @@ As a junior data engineer in Jooli Inc. and recently trained with Google Cloud a
 
 You are expected to have the skills and knowledge for these tasks so don’t expect step-by-step guides.
 
-### Task 1: Run a simple Dataflow job
+## Task 1: Run a simple Dataflow job
 
 You have used Dataflow in the quest to load data into BigQuery from Pub/Sub, now use the Dataflow batch template Text Files on Cloud Storage to BigQuery under "Process Data in Bulk (batch)" to transfer data from a Cloud Storage bucket (gs://cloud-training/gsp323/lab.csv). The following table has the values you need to correctly configure the Dataflow job.
 
@@ -18,14 +18,14 @@ You will need to make sure you have:
 
 Answer:
 
-bq mk lab_515
-gsutil mb gs://qwiklabs-gcp-04-a80d95a1806a-marking
-gsutil cp gs://cloud-training/gsp323/lab.csv .
-gsutil cp gs://cloud-training/gsp323/lab.schema .
-cat lab.schema
+- bq mk lab_515
+- gsutil mb gs://qwiklabs-gcp-04-a80d95a1806a-marking
+- gsutil cp gs://cloud-training/gsp323/lab.csv .
+- gsutil cp gs://cloud-training/gsp323/lab.schema .
+- cat lab.schema
 
 
-[
+- [
 {"type":"STRING","name":"guid"},
 {"type":"BOOLEAN","name":"isActive"},
 {"type":"STRING","name":"firstname"},
@@ -43,20 +43,30 @@ cat lab.schema
 
 
 
+###  Create table in BigQuery
 
-####  Create table in BigQuery
-![image](https://github.com/moniquecardoso25/Google-Cloud/assets/140358716/0f9a09d0-783b-4e84-8bd8-f2b7f3083e0e)
+#### Creating a table in BigQuery 
+
+![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/290b99db-e8a6-42ea-85c9-2c3945597f79)
+
+![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/f28babaf-b167-4ea5-a50f-60c646b360be)
+
+#### Table Created
+![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/fbcc9bcf-fa20-467e-b6e9-1086d26d6a01)
 
 
-#### Create a Job in DataFlow
-![image](https://github.com/moniquecardoso25/Google-Cloud/assets/140358716/13e83dd4-8042-47b7-bb89-4b1739494cb2)
+### Create a Job in DataFlow
 
-Template
-![image](https://github.com/moniquecardoso25/Google-Cloud/assets/140358716/e6aae793-8727-483e-8c7a-8f806179d09e)
+#### Template
+![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/d9185bff-0492-4b13-b943-bce52dd69f42)
 
-Machine Type
+![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/b1753582-9f79-4696-baaf-17caa50af1e7)
 
-![image](https://github.com/moniquecardoso25/Google-Cloud/assets/140358716/05de103c-9977-4205-b92d-c2598569fb17)
+#### Machine Type
+![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/5ed62aef-7b9b-4c63-bf2f-a5f08b07583c)
+
+
+#### Job Created
 
 
 
