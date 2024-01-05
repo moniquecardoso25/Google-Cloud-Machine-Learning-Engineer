@@ -60,7 +60,8 @@ Answer:
 ### Create a Job in DataFlow
 
 #### Template
-![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/2bef6e37-d52c-4fbb-bd2c-f0b26a37872a)
+
+![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/0c39a6c2-685d-49c4-ab2f-77ec38ae8f33)
 
 ![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/04e20a2f-83ac-4390-9132-e82284a890a2)
 
@@ -70,8 +71,12 @@ Answer:
 ![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/bdd7dcbd-a188-472d-98a8-707e3274d7ec)
 
 
-
 #### Job Created
+
+![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/28b82a62-9590-49e6-b622-7dd99012db23)
+
+
+![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/8b35ca02-c22d-4f57-ab10-091592747483)
 
 
 
@@ -86,16 +91,41 @@ Before you run the job, log into one of the cluster nodes and copy the /data.txt
 
 Region
 
-![image](https://github.com/moniquecardoso25/Google-Cloud/assets/140358716/645bb195-90c4-4926-a76e-86dc2065391e)
+![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/d8f1e5d9-260c-4e6f-b995-18f08cf0903e)
 
 
 Nodes
 
-![image](https://github.com/moniquecardoso25/Google-Cloud/assets/140358716/084e09da-5369-4535-a60c-ce3097642005)
+![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/df1dad9c-c6ff-423f-b5e9-46905de596ed)
+
+
+![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/aaf4892c-efab-4772-9011-63d2a46f7006)
+
+
+![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/4e211880-4455-44c0-ac79-e86179531b94)
+
+#### Cluster created
+
+![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/118aeab5-0cab-4d24-95ad-42a3e79dddc1)
+
+
+#### SSH VM instance
+
+![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/ffad2902-a8b7-4799-9002-da5d6df65aec)
 
 
 
+![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/38ac4d49-61bc-47e7-80da-73df63c80b1f)
 
+
+#### Dataproc Job
+
+![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/72035eb1-280a-475e-9397-83922d5e357e)
+
+
+#### Job created
+
+![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/207ebdcc-5190-4eb5-949b-a1cea2a5f303)
 
 
 ### Task 3: Use the Google Cloud Speech API
@@ -103,6 +133,36 @@ Nodes
 Use Google Cloud Speech API to analyze the audio file gs://cloud-training/gsp323/task3.flac. Once you have analyzed the file, upload the resulting file to: Cloud Speech Location
 
 
+#### API key
+
+![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/1118a04f-3c82-44c9-9b67-302e58d0446d)
+
+
+AIzaSyAs_n-sv_DqVrXLeQpjDhDAnaRhM8xUIyY
+
+
+export API_KEY=AIzaSyAs_n-sv_DqVrXLeQpjDhDAnaRhM8xUIyY
+nano request.json
+{
+
+        "config": {
+                "encoding":"FLAC"
+                "languageCode":"en-US"
+        },
+        "audio": {
+                "uri":"gs://cloud-training/gsp323/task3.flac"
+        }
+}
+
+
+
+cat request.json
+
+export API_KEY=AIzaSyAs_n-sv_DqVrXLeQpjDhDAnaRhM8xUIyY
+curl -s -X POST -H "Content-Type: application/js on" --data-binary @request.json "https://speech.googleapis.com/v1/speech:recognize?key=${API_KEY}"> result.json
+
+
+gsutil cp result.json gs://qwiklabs-gcp-01-ab6f7c136f0e-marking/task3-gcs-849.result
 
 
 
@@ -110,7 +170,15 @@ Use Google Cloud Speech API to analyze the audio file gs://cloud-training/gsp323
 ### Task 4: Use the Cloud Natural Language API
 Use the Cloud Natural Language API to analyze the sentence from text about Odin. The text you need to analyze is "Old Norse texts portray Odin as one-eyed and long-bearded, frequently wielding a spear named Gungnir and wearing a cloak and a broad hat." Once you have analyzed the text, upload the resulting file to: Cloud Natural Language Location
 
+#### Cloud Shell
+gcloud iam service-accounts create my-natlang-sa \
+gcloud iam service-accounts keys create ~/key.json \> --iam-account my-natlang-sa@{GOOGLE:_CLOUD_PROJECT}.iam.gserviceaccount.com
+export GOOGLE_APPLICATION_CREDENTIALS="/home/USER/key.json"
+gcloud ml language analyze-entities --content="Old Norse texts portray Odin as one-eyed and long-bearded, frequently wielding a spear named Gungnir and wearing a cloak and a broad hat." > result.json
+cat result.json
+gsutil cp result.json gs://
 
+insert gs
 
 
 
