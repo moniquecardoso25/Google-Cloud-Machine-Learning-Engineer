@@ -18,14 +18,23 @@ You will need to make sure you have:
 
 Answer:
 
-- bq mk lab_515
-- gsutil mb gs://qwiklabs-gcp-04-a80d95a1806a-marking
-- gsutil cp gs://cloud-training/gsp323/lab.csv .
-- gsutil cp gs://cloud-training/gsp323/lab.schema .
-- cat lab.schema
+![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/5e92e37b-b99e-436f-9624-d87f1f5e28ed)
 
 
-- [
+![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/0175ec63-219c-42cb-9f14-6f8822c3295d)
+
+
+gsutil cp gs://cloud-training/gsp323/lab.csv .
+gsutil cp gs://cloud-training/gsp323/lab.schema .
+cat lab.schema
+
+
+![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/3561c305-fb83-4fd9-926d-4dbc2b41017b)
+
+
+
+
+[
 {"type":"STRING","name":"guid"},
 {"type":"BOOLEAN","name":"isActive"},
 {"type":"STRING","name":"firstname"},
@@ -41,15 +50,14 @@ Answer:
 ]
 
 
+![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/b221f858-dcc4-4bf0-9c54-ff1e6a1442de)
+
 
 
 ###  Create table in BigQuery
 
 #### Creating a table in BigQuery 
 
-![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/290b99db-e8a6-42ea-85c9-2c3945597f79)
-
-![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/f28babaf-b167-4ea5-a50f-60c646b360be)
 
 #### Table Created
 ![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/fbcc9bcf-fa20-467e-b6e9-1086d26d6a01)
@@ -58,12 +66,15 @@ Answer:
 ### Create a Job in DataFlow
 
 #### Template
-![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/d9185bff-0492-4b13-b943-bce52dd69f42)
+![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/2bef6e37-d52c-4fbb-bd2c-f0b26a37872a)
 
-![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/b1753582-9f79-4696-baaf-17caa50af1e7)
+![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/04e20a2f-83ac-4390-9132-e82284a890a2)
+
 
 #### Machine Type
-![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/5ed62aef-7b9b-4c63-bf2f-a5f08b07583c)
+
+![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/bdd7dcbd-a188-472d-98a8-707e3274d7ec)
+
 
 
 #### Job Created
