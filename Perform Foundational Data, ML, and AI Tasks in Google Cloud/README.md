@@ -18,23 +18,22 @@ You will need to make sure you have:
 
 Answer:
 
+
+###  Create table in BigQuery
+
+
 ![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/5e92e37b-b99e-436f-9624-d87f1f5e28ed)
 
 
 ![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/0175ec63-219c-42cb-9f14-6f8822c3295d)
 
-
-gsutil cp gs://cloud-training/gsp323/lab.csv .
-gsutil cp gs://cloud-training/gsp323/lab.schema .
-cat lab.schema
-
+#### Creating a table in BigQuery 
 
 ![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/3561c305-fb83-4fd9-926d-4dbc2b41017b)
 
 
 
-
-[
+- [
 {"type":"STRING","name":"guid"},
 {"type":"BOOLEAN","name":"isActive"},
 {"type":"STRING","name":"firstname"},
@@ -53,14 +52,9 @@ cat lab.schema
 ![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/b221f858-dcc4-4bf0-9c54-ff1e6a1442de)
 
 
-
-###  Create table in BigQuery
-
-#### Creating a table in BigQuery 
-
-
-#### Table Created
-![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/fbcc9bcf-fa20-467e-b6e9-1086d26d6a01)
+- gsutil cp gs://cloud-training/gsp323/lab.csv .
+- gsutil cp gs://cloud-training/gsp323/lab.schema .
+- cat lab.schema
 
 
 ### Create a Job in DataFlow
