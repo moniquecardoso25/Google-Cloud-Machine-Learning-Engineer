@@ -21,19 +21,23 @@ Answer:
 
 ###  Create table in BigQuery
 
+![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/b3d988e6-f770-45b0-8aa4-cc4a10986b35)
 
-![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/5e92e37b-b99e-436f-9624-d87f1f5e28ed)
+![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/4d987428-0d96-449f-a414-06f659ae1cb3)
 
-
-![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/0175ec63-219c-42cb-9f14-6f8822c3295d)
 
 #### Creating a table in BigQuery 
+
+gsutil cp gs://cloud-training/gsp323/lab.csv .
+gsutil cp gs://cloud-training/gsp323/lab.schema .
+cat lab.schema
+
 
 ![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/3561c305-fb83-4fd9-926d-4dbc2b41017b)
 
 
 
-- [
+[
 {"type":"STRING","name":"guid"},
 {"type":"BOOLEAN","name":"isActive"},
 {"type":"STRING","name":"firstname"},
@@ -49,34 +53,48 @@ Answer:
 ]
 
 
-![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/b221f858-dcc4-4bf0-9c54-ff1e6a1442de)
+
+![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/1307cb6c-28f4-4d20-b34c-0316276fb6a9)
 
 
-- gsutil cp gs://cloud-training/gsp323/lab.csv .
-- gsutil cp gs://cloud-training/gsp323/lab.schema .
-- cat lab.schema
+
+![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/12635762-a8f4-4900-9e9f-ddb1adcf5dfb)
+
+
+
+![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/6bb62ad2-da66-41c4-85e8-a5522665e003)
+
+#### Cloud storage Bucket
+
+![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/b9a3b5ea-411d-484e-b3a5-90ee6a6d0755)
+
+
+![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/315051f1-70bb-47cd-aa95-acaf05302160)
+
 
 
 ### Create a Job in DataFlow
 
 #### Template
 
-![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/0c39a6c2-685d-49c4-ab2f-77ec38ae8f33)
+Text Files on Google Cloud Storage to Bigquery
 
-![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/04e20a2f-83ac-4390-9132-e82284a890a2)
+![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/48119144-7521-4789-9c89-822aa9c3b4e4)
+
+
+![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/34709b94-e1af-4a98-ad54-245aa9b00f4d)
+
+
+![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/4f0af2de-acb9-43d6-9300-fb00f1aacd60)
+
 
 
 #### Machine Type
 
-![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/bdd7dcbd-a188-472d-98a8-707e3274d7ec)
+![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/e3eb3d87-3b61-437c-948c-40e0f51f46da)
 
 
 #### Job Created
-
-![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/28b82a62-9590-49e6-b622-7dd99012db23)
-
-
-![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/8b35ca02-c22d-4f57-ab10-091592747483)
 
 
 
