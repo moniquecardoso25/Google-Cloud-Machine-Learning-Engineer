@@ -100,6 +100,11 @@ Text Files on Google Cloud Storage to Bigquery
 
 #### Job Created
 
+![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/e6d8be9b-6e80-4c56-bdbf-d7ded90cb1b9)
+
+
+![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/cbee849f-7a50-4106-8ade-05c45316a61e)
+
 
 
 ### Task 2: Run a simple Dataproc job
@@ -113,48 +118,53 @@ Before you run the job, log into one of the cluster nodes and copy the /data.txt
 
 Region
 
-![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/54935034-37f5-4499-a482-99bbec7dc4e7)
+![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/7f6b20d2-c4b6-458b-9c24-b8f61a7071ca)
+
 
 
 Nodes
 
-![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/c0c4b1b3-d540-47c9-8848-1ebd912f2110)
+![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/65477cfd-935f-4ca3-8aa9-a77263060ed3)
 
 
-![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/7ad8d014-7093-422b-be13-5adbf7236fdf)
+![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/7bcc0e6b-3030-41fc-9c3e-ade855df9ea7)
+
 
 
 #### Cluster created
 
-![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/97078ddf-80cf-4df8-a401-911ccbe4cb9b)
+![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/cc1e0d83-56f2-49cb-95c9-c4ae4b14413a)
+
 
 
 
 #### SSH VM instance
 
-![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/5307e913-0287-4a70-9442-f5c546dbdcdd)
+![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/d32091ac-96f7-4704-98ee-ccf48a963163)
 
 
-![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/3ec911fc-0484-4a82-a218-a30495dfc81f)
+![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/c6ada96a-e18f-45ed-9b18-afab77fdb16a)
 
 
 
 #### Dataproc Job
 
-![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/5663040f-bf13-46c7-b82a-2b7d957563ab)
+![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/760439a8-9805-4f66-bd12-7d42428b65c7)
+
 
 
 #### Job created
 
-![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/f1760ff8-ba0d-4d78-8ce9-7022e0e63782)
+![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/2c938aa1-e0af-4676-8fe7-41176d1e0167)
 
 
-![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/072c4a81-1485-474c-81ee-2f67dbb9f005)
+![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/17e2fb0d-6ea9-4fb3-8eb5-ad4823662dbf)
+
 
 
 ### Task 3: Use the Google Cloud Speech API
 
-Use Google Cloud Speech API to analyze the audio file gs://cloud-training/gsp323/task3.flac. Once you have analyzed the file, upload the resulting file to: Cloud Speech Location
+Use Google Cloud Speech API to analyze the audio file gs://cloud-training/gsp323/task3.flac. Once you have analyzed the file, upload the resulting file to: gs://qwiklabs-gcp-01-57487449610c-marking/task3-gcs-230.result
 
 
 #### API key
@@ -170,13 +180,12 @@ AIzaSyCwT0afGYhpE4k6JOH6Kl9KhMNbapm7OTI
 
 
 
-
-export API_KEY=AIzaSyCwT0afGYhpE4k6JOH6Kl9KhMNbapm7OTI
-nano request.json
+- export API_KEY=AIzaSyBWs9eVNOHkyVpOugesIbWqD97iK1KGudQ
+- nano request.json
 {
 
         "config": {
-                "encoding":"FLAC"
+                "encoding":"FLAC",
                 "languageCode":"en-US"
         },
         "audio": {
@@ -185,31 +194,47 @@ nano request.json
 }
 
 
-
-cat request.json
-
-export API_KEY=AIzaSyCwT0afGYhpE4k6JOH6Kl9KhMNbapm7OTI
-curl -s -X POST -H "Content-Type: application/js on" --data-binary @request.json "https://speech.googleapis.com/vl/speech:recognize?key=${API_KEY}" > result.json
-
-cat result.json
+![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/8366393c-d327-480f-9f59-0f2b7064512d)
 
 
-gsutil cp result.json gs://qwiklabs-gcp-04-3eb3abe0aba5-marking/task3-gcs-974.result
+
+
+- cat request.json
+
+- export API_KEY=AIzaSyBWs9eVNOHkyVpOugesIbWqD97iK1KGudQ
+- curl -s -X POST -H "Content-Type: application/js on" --data-binary @request.json "https://speech.googleapis.com/v1/speech:recognize?key=${API_KEY}" > result.json
+student-01-f32fc6319b1b@cluster-1191-m:~$ cat result.json
+- cat result.json
+
+
+- gsutil cp result.json gs://qwiklabs-gcp-01-57487449610c-marking/task3-gcs-230.result
+
+
+![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/148f88b7-376a-498d-a67f-c6fc2f3876a1)
 
 
 
 ### Task 4: Use the Cloud Natural Language API
-Use the Cloud Natural Language API to analyze the sentence from text about Odin. The text you need to analyze is "Old Norse texts portray Odin as one-eyed and long-bearded, frequently wielding a spear named Gungnir and wearing a cloak and a broad hat." Once you have analyzed the text, upload the resulting file to: Cloud Natural Language Location
+
+Use the Cloud Natural Language API to analyze the sentence from text about Odin. The text you need to analyze is "Old Norse texts portray Odin as one-eyed and long-bearded, frequently wielding a spear named Gungnir and wearing a cloak and a broad hat." Once you have analyzed the text, upload the resulting file to: gs://qwiklabs-gcp-01-57487449610c-marking/task4-cnl-743.result
 
 #### Cloud Shell
-gcloud iam service-accounts create my-natlang-sa \
-gcloud iam service-accounts keys create ~/key.json \> --iam-account my-natlang-sa@{GOOGLE:_CLOUD_PROJECT}.iam.gserviceaccount.com
-export GOOGLE_APPLICATION_CREDENTIALS="/home/USER/key.json"
-gcloud ml language analyze-entities --content="Old Norse texts portray Odin as one-eyed and long-bearded, frequently wielding a spear named Gungnir and wearing a cloak and a broad hat." > result.json
-cat result.json
-gsutil cp result.json gs://qwiklabs-gcp-04-3eb3abe0aba5-marking/task4-cnl-223.result
+- gcloud iam service-accounts create my-natlang-sa \
+- glcoud iam service-accounts keys create ~/keys.json \> --iam-account my-natlang-sa@${GOOGLE_CLOUD_PROJECT}.iam.gserviceaccount.com
+- export GOOGLE_APPLICATION_CREDENTIALS="/home/USER/key.json"
+- gcloud ml language analyze-entities --content="Old Norse texts portray Odin as one-eyed and long-bearded, frequently wielding a spear named Gungnir and wearing a cloak and a broad hat." > result.json
+- cat result.json
+- gsutil cp result.json gs://qwiklabs-gcp-01-57487449610c-marking/task4-cnl-743.result
 
 
+![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/8d04463c-241c-4338-b4d3-cfabb67c41c6)
 
 
+![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/a7a96bda-08b6-40ee-a2ee-8c5e51d1f8c4)
+
+
+![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/da218e4c-fa8f-4ca7-9bfa-2b459fed79ac)
+
+
+![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/42a34b5d-d1b8-4aac-837b-0f595b2dd2e7)
 
