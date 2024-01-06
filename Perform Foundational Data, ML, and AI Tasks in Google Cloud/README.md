@@ -182,8 +182,8 @@ AIzaSyCwT0afGYhpE4k6JOH6Kl9KhMNbapm7OTI
 
 - export API_KEY=AIzaSyBWs9eVNOHkyVpOugesIbWqD97iK1KGudQ
 - nano request.json
-{
 
+{
         "config": {
                 "encoding":"FLAC",
                 "languageCode":"en-US"
