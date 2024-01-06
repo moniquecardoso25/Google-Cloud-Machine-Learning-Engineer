@@ -172,7 +172,6 @@ Use Google Cloud Speech API to analyze the audio file gs://cloud-training/gsp323
 ![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/bc660d89-d841-43e9-990f-359c46ad4145)
 
 
-AIzaSyCwT0afGYhpE4k6JOH6Kl9KhMNbapm7OTI
 
 #### Dataproc again . VM Instance 
 
