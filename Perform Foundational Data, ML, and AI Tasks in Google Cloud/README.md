@@ -203,10 +203,7 @@ AIzaSyCwT0afGYhpE4k6JOH6Kl9KhMNbapm7OTI
 
 - export API_KEY=AIzaSyBWs9eVNOHkyVpOugesIbWqD97iK1KGudQ
 - curl -s -X POST -H "Content-Type: application/js on" --data-binary @request.json "https://speech.googleapis.com/v1/speech:recognize?key=${API_KEY}" > result.json
-student-01-f32fc6319b1b@cluster-1191-m:~$ cat result.json
 - cat result.json
-
-
 - gsutil cp result.json gs://qwiklabs-gcp-01-57487449610c-marking/task3-gcs-230.result
 
 
