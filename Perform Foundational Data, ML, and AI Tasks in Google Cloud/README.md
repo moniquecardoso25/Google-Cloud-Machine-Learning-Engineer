@@ -1,5 +1,7 @@
 # Perform Foundational Data, ML, and AI Tasks in Google Cloud
 
+- Credits: Google Skills Boost - ML Path
+
 
 As a junior data engineer in Jooli Inc. and recently trained with Google Cloud and a number of data services you have been asked to demonstrate your newly learned skills. The team has asked you to complete the following tasks.
 
