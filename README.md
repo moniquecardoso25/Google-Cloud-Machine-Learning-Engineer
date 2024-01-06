@@ -8,7 +8,9 @@ This repository documents my self-directed learning journey as I embark on the M
 > https://www.cloudskillsboost.google/public_profiles/a8702504-2772-45bd-9d39-5a9fa63248fb
 
 
-## 1. [Perform Foundational Data, ML, and AI Tasks in Google Cloud](
+## Lab Projects
+
+### 1. [Perform Foundational Data, ML, and AI Tasks in Google Cloud](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/tree/a9d1c32355fbf3017be2ac190a25c8539880b42a/Perform%20Foundational%20Data%2C%20ML%2C%20and%20AI%20Tasks%20in%20Google%20Cloud)
  
 ![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/984edd84-c2ff-42ad-bf73-f5dae6ced42c)
 
