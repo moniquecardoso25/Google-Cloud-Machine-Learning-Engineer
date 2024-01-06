@@ -21,23 +21,32 @@ Answer:
 
 ###  Create table in BigQuery
 
-![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/b3d988e6-f770-45b0-8aa4-cc4a10986b35)
+![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/6000885d-1572-4cb0-978e-0575fbc44c71)
 
-![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/4d987428-0d96-449f-a414-06f659ae1cb3)
+
+![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/049b06fb-001f-4c44-a910-c279b20788d4)
+
+
+
+#### Cloud storage Bucket
+
+![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/31fae0a0-58da-4315-b212-25680afcdda2)
+
+
+
+![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/71f84934-e3ed-492e-9046-4013c3d2d518)
+
 
 
 #### Creating a table in BigQuery 
 
-gsutil cp gs://cloud-training/gsp323/lab.csv .
-gsutil cp gs://cloud-training/gsp323/lab.schema .
-cat lab.schema
-
-
-![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/3561c305-fb83-4fd9-926d-4dbc2b41017b)
+- gsutil cp gs://cloud-training/gsp323/lab.csv .
+- gsutil cp gs://cloud-training/gsp323/lab.schema .
+- cat lab.schema
 
 
 
-[
+- [
 {"type":"STRING","name":"guid"},
 {"type":"BOOLEAN","name":"isActive"},
 {"type":"STRING","name":"firstname"},
@@ -54,22 +63,16 @@ cat lab.schema
 
 
 
-![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/1307cb6c-28f4-4d20-b34c-0316276fb6a9)
+![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/f1d6e99d-76a2-407c-b092-c829bb5eea95)
 
 
 
-![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/12635762-a8f4-4900-9e9f-ddb1adcf5dfb)
+![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/aa1e9c05-240e-4260-aa48-cbd6cc0c8ee7)
 
 
 
-![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/6bb62ad2-da66-41c4-85e8-a5522665e003)
+![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/12b27a9d-0b21-49da-8922-71b29af96e20)
 
-#### Cloud storage Bucket
-
-![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/b9a3b5ea-411d-484e-b3a5-90ee6a6d0755)
-
-
-![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/315051f1-70bb-47cd-aa95-acaf05302160)
 
 
 
@@ -82,24 +85,21 @@ Text Files on Google Cloud Storage to Bigquery
 ![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/48119144-7521-4789-9c89-822aa9c3b4e4)
 
 
-![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/34709b94-e1af-4a98-ad54-245aa9b00f4d)
+![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/616f0dfb-420b-40b5-8c62-7161ea66b95c)
 
 
-![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/4f0af2de-acb9-43d6-9300-fb00f1aacd60)
+
+![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/753c3f36-06e8-4692-af6b-fd87485f564d)
 
 
 
 #### Machine Type
 
-![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/e3eb3d87-3b61-437c-948c-40e0f51f46da)
+![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/69a1c2d1-3c0b-4573-800d-d98f46dbf955)
 
 
 #### Job Created
 
-![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/bb3b2897-2a10-49ac-8fa2-0d15f4faa8d1)
-
-
-![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/a2db99a9-124f-425f-9534-74b643bdbaf9)
 
 
 ### Task 2: Run a simple Dataproc job
