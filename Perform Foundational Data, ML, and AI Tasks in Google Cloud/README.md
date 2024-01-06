@@ -78,7 +78,7 @@ Answer:
 
 ### Create a Job in DataFlow
 
-#### Template
+### Template
 
 Text Files on Google Cloud Storage to Bigquery
 
@@ -93,12 +93,12 @@ Text Files on Google Cloud Storage to Bigquery
 
 
 
-#### Machine Type
+### Machine Type
 
 ![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/69a1c2d1-3c0b-4573-800d-d98f46dbf955)
 
 
-#### Job Created
+### Job Created
 
 ![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/e6d8be9b-6e80-4c56-bdbf-d7ded90cb1b9)
 
