@@ -28,7 +28,7 @@ Answer:
 
 
 
-#### Cloud storage Bucket
+### Cloud storage Bucket
 
 ![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/31fae0a0-58da-4315-b212-25680afcdda2)
 
@@ -38,7 +38,7 @@ Answer:
 
 
 
-#### Creating a table in BigQuery 
+### Creating a table in BigQuery 
 
 - gsutil cp gs://cloud-training/gsp323/lab.csv .
 - gsutil cp gs://cloud-training/gsp323/lab.schema .
@@ -107,22 +107,22 @@ Text Files on Google Cloud Storage to Bigquery
 
 
 
-### Task 2: Run a simple Dataproc job
+## Task 2: Run a simple Dataproc job
 You have used Dataproc in the quest, now you must run another example Spark job using Dataproc.
 
 Before you run the job, log into one of the cluster nodes and copy the /data.txt file into hdfs (use the command hdfs dfs -cp gs://cloud-training/gsp323/data.txt /data.txt).
 
 
 
-#### Create a cluster on Compute Engine
+### Create a cluster on Compute Engine
 
-Region
+### Region
 
 ![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/7f6b20d2-c4b6-458b-9c24-b8f61a7071ca)
 
 
 
-Nodes
+### Nodes
 
 ![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/65477cfd-935f-4ca3-8aa9-a77263060ed3)
 
@@ -131,14 +131,13 @@ Nodes
 
 
 
-#### Cluster created
+### Cluster created
 
 ![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/cc1e0d83-56f2-49cb-95c9-c4ae4b14413a)
 
 
 
-
-#### SSH VM instance
+### SSH VM instance
 
 ![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/d32091ac-96f7-4704-98ee-ccf48a963163)
 
@@ -147,13 +146,13 @@ Nodes
 
 
 
-#### Dataproc Job
+### Dataproc Job
 
 ![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/760439a8-9805-4f66-bd12-7d42428b65c7)
 
 
 
-#### Job created
+### Job created
 
 ![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/2c938aa1-e0af-4676-8fe7-41176d1e0167)
 
@@ -162,18 +161,18 @@ Nodes
 
 
 
-### Task 3: Use the Google Cloud Speech API
+## Task 3: Use the Google Cloud Speech API
 
 Use Google Cloud Speech API to analyze the audio file gs://cloud-training/gsp323/task3.flac. Once you have analyzed the file, upload the resulting file to: gs://qwiklabs-gcp-01-57487449610c-marking/task3-gcs-230.result
 
 
-#### API key
+### API key
 
 ![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/bc660d89-d841-43e9-990f-359c46ad4145)
 
 
 
-#### Dataproc again . VM Instance 
+### Dataproc again. VM Instance 
 
 ![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/c0651629-f3b1-49e7-a1ed-4597343b9261)
 
@@ -197,7 +196,6 @@ Use Google Cloud Speech API to analyze the audio file gs://cloud-training/gsp323
 
 
 
-
 - cat request.json
 
 - export API_KEY=AIzaSyBWs9eVNOHkyVpOugesIbWqD97iK1KGudQ
@@ -210,11 +208,12 @@ Use Google Cloud Speech API to analyze the audio file gs://cloud-training/gsp323
 
 
 
-### Task 4: Use the Cloud Natural Language API
+## Task 4: Use the Cloud Natural Language API
 
 Use the Cloud Natural Language API to analyze the sentence from text about Odin. The text you need to analyze is "Old Norse texts portray Odin as one-eyed and long-bearded, frequently wielding a spear named Gungnir and wearing a cloak and a broad hat." Once you have analyzed the text, upload the resulting file to: gs://qwiklabs-gcp-01-57487449610c-marking/task4-cnl-743.result
 
-#### Cloud Shell
+### Cloud Shell
+
 - gcloud iam service-accounts create my-natlang-sa \
 Autorize Cloud Shell and continue: 
 - > --display-name "my natural language service account"
