@@ -1,4 +1,4 @@
-# Build and Deploy Machine Learning Solutions on Vertex AI
+# Build and Deploy Machine Learning Solutions on Vertex AI(IN CONSTRUCTION)
 
 ## Master Vertex AI with High-Impact ML Projects
 
