@@ -216,7 +216,7 @@ Use the Cloud Natural Language API to analyze the sentence from text about Odin.
 
 #### Cloud Shell
 - gcloud iam service-accounts create my-natlang-sa \
-- > --display-name "my natural language service account"
+> --display-name "my natural language service account"
 - glcoud iam service-accounts keys create ~/keys.json \> --iam-account my-natlang-sa@${GOOGLE_CLOUD_PROJECT}.iam.gserviceaccount.com
 - export GOOGLE_APPLICATION_CREDENTIALS="/home/USER/key.json"
 - gcloud ml language analyze-entities --content="Old Norse texts portray Odin as one-eyed and long-bearded, frequently wielding a spear named Gungnir and wearing a cloak and a broad hat." > result.json
