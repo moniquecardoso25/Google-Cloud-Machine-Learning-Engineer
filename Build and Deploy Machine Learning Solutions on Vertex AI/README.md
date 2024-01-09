@@ -1,5 +1,8 @@
 # Build and Deploy Machine Learning Solutions on Vertex AI
 
+### Observations: studying this Badge and doing the labs.
+
+
 ## Master Vertex AI with High-Impact ML Projects
 
 This Skill Badge is your passport to mastering Vertex AI, Google's unified platform for building and deploying powerful machine learning (ML) models that solve real-world business problems.
