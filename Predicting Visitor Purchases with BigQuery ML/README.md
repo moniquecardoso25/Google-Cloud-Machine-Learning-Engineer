@@ -1,5 +1,11 @@
 # Predicting Visitor Purchases with BigQuery ML
 
+**Credits**
+- Google Skills Boost
+- Course: [Introduction to AI and Machine Learning on Google Cloud](https://www.cloudskillsboost.google/course_sessions/4587336/labs/423376)
+- AI Foundations Lab
+
+
 ## Overview
 
 BigQuery ML (BigQuery machine learning) is a feature in BigQuery where data analysts can create, train, evaluate, and predict with machine learning models with minimal coding.
