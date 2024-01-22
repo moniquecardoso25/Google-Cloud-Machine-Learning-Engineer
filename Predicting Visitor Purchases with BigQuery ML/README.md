@@ -2,8 +2,8 @@
 
 **Credits**
 - Google Skills Boost
-- Course: [Introduction to AI and Machine Learning on Google Cloud](https://www.cloudskillsboost.google/course_sessions/4587336/labs/423376)
-- AI Foundations Lab
+- Course: Introduction to AI and Machine Learning on Google Cloud
+- [AI Foundations Lab](https://www.cloudskillsboost.google/course_sessions/4587336/labs/423376)
 
 
 ## Overview
