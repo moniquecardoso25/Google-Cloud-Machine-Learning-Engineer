@@ -52,7 +52,7 @@ The Natural Language API also supports sending files stored in Cloud Storage for
 
 
 
-##Task 3. Call the Natural Language API
+## Task 3. Call the Natural Language API
 
 1. You can now pass your request body, along with the API key environment variable you saved earlier, to the Natural Language API with the following curl command (all in one single command line):
 
