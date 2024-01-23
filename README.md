@@ -54,3 +54,5 @@ See smarter, analyze deeper. Give your videos the power of sight and sound. Auto
 Listen closely, understand deeply. Transcribe audio with precision, analyze sentiment, and unlock the hidden meaning within spoken words. 
 
 ![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/984edd84-c2ff-42ad-bf73-f5dae6ced42c)
+
+## 2. Predictiing (https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/tree/92d2ad642f93c17c73e499681c7872bfffa7719e/Predicting%20Visitor%20Purchases%20with%20BigQuery%20ML)
