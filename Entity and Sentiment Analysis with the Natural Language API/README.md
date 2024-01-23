@@ -1,6 +1,9 @@
 # Entity and Sentiment Analysis with the Natural Language API
 
-Credits
+**Credits**
+- Google Cloud Skills Boost
+- Course: Introduction to AI and Machine Learning on Google Cloud
+- [Lab AI Development Options](https://www.cloudskillsboost.google/course_sessions/4587336/labs/423387)
 
 ## Task 1. Create an API key
 Since you use curl to send a request to the Natural Language API, you must generate an API key to pass in your request URL.
