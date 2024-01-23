@@ -5,6 +5,18 @@
 - Course: Introduction to AI and Machine Learning on Google Cloud
 - [Lab AI Development Options](https://www.cloudskillsboost.google/course_sessions/4587336/labs/423387)
 
+## Overview
+
+The Cloud Natural Language API lets you extract entities from text, perform sentiment and syntactic analysis, and classify text into categories.
+
+In this lab, you learn how to use the Natural Language API to analyze entities, sentiment, and syntax by:
+
+- Creating a Natural Language API request and calling the API with curl
+- Extracting entities and running sentiment analysis on text with the Natural Language API
+- Performing linguistic analysis on text with the Natural Language API
+- Creating a Natural Language API request in a different language
+
+
 ## Task 1. Create an API key
 Since you use curl to send a request to the Natural Language API, you must generate an API key to pass in your request URL.
 
