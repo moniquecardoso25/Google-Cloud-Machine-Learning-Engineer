@@ -57,3 +57,32 @@ Listen closely, understand deeply. Transcribe audio with precision, analyze sent
 
 ## 2. [Predicting Visitor Purchases with BigQuery ML](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/tree/92d2ad642f93c17c73e499681c7872bfffa7719e/Predicting%20Visitor%20Purchases%20with%20BigQuery%20ML)
 
+Description: Your data analyst team exported the Google Analytics logs for an ecommerce website into BigQuery and created a new table of all the raw ecommerce visitor session data for you to explore. Using this data, you'll try to answer a few questions.
+
+Tools used: BigQueryML, SQL
+
+- Query and explore the ecommerce dataset
+- Create a training and evaluation dataset to be used for batch prediction
+- Create a classification (logistic regression) model in BigQuery ML
+- Evaluate the performance of your machine learning model
+- Predict and rank the probability that a visitor will make a purchase
+
+## 3. [Entity and Sentiment Analysis with the Natural Language API](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/tree/a9ad6e8ff1b91a4c97a29668f3c6fc9070e20086/Entity%20and%20Sentiment%20Analysis%20with%20the%20Natural%20Language%20API)
+
+Description: The Cloud Natural Language API lets extract entities from text, perform sentiment and syntactic analysis, and classify text into categories.
+Learn how to use the Natural Language API to analyze entities, sentiment, and syntax by:
+
+- Creating a Natural Language API request and calling the API with curl
+- Extracting entities and running sentiment analysis on text with the Natural Language API
+- Performing linguistic analysis on text with the Natural Language API
+- Creating a Natural Language API request in a different language
+
+Tool used:
+- API KEY
+- SHH (from Compute Engine Instance)
+- Natural Language API
+   - Multilingual natural language processing
+   - Analyzing syntax and parts of speech
+   - Analyzing entity sentiment
+   - Sentiment analysis with the Natural Language API
+  
