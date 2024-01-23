@@ -22,7 +22,8 @@ Use BigQuery to find public datasets
 - Evaluate the performance of your machine learning model
 - Predict and rank the probability that a visitor will make a purchase
 
-Task 1. Explore ecommerce data
+## Task 1. Explore ecommerce data
+
 Scenario: Your data analyst team exported the Google Analytics logs for an ecommerce website into BigQuery and created a new table of all the raw ecommerce visitor session data for you to explore. Using this data, you'll try to answer a few questions.
 
 **Question: Out of the total visitors who visited our website, what % made a purchase?**
