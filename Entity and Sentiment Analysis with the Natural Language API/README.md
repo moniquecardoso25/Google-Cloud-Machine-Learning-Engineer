@@ -74,7 +74,6 @@ Example
 ![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/b9581fa4-303e-4322-a1c2-4776756605dd)
 
 
-4
 
 ## Task 4. Sentiment analysis with the Natural Language API
 In addition to extracting entities, the Natural Language API also lets you perform sentiment analysis on a block of text. This JSON request will include the same parameters as the request above, but this time change the text to include something with a stronger sentiment.
