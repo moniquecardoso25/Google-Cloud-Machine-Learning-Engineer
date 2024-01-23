@@ -16,7 +16,6 @@ To create an API key, in the Cloud Console, select Navigation menu > APIs & Serv
 
 
 - Copy the generated API key and click Close.
- AIzaSyA3P1M9pBUyZK1DTGtAN3w2JD7Yu8Ubwss
 
 
 ## Task 2. Make an entity analysis request
