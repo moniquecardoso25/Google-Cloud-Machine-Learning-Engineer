@@ -12,8 +12,6 @@ This repository documents my self-directed learning journey as I embark on the M
 
 ## 1. [Perform Foundational Data, ML, and AI Tasks in Google Cloud](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/tree/a9d1c32355fbf3017be2ac190a25c8539880b42a/Perform%20Foundational%20Data%2C%20ML%2C%20and%20AI%20Tasks%20in%20Google%20Cloud)
  
-![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/984edd84-c2ff-42ad-bf73-f5dae6ced42c)
-
 
 Description: Learn the basic features for the following machine learning and AI technologies 
 
@@ -55,3 +53,4 @@ See smarter, analyze deeper. Give your videos the power of sight and sound. Auto
 
 Listen closely, understand deeply. Transcribe audio with precision, analyze sentiment, and unlock the hidden meaning within spoken words. 
 
+![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/984edd84-c2ff-42ad-bf73-f5dae6ced42c)
