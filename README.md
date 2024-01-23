@@ -10,8 +10,6 @@ This repository documents my self-directed learning journey as I embark on the M
 
 ## Projects
 
-**BADGE**
-
 ## 1. [Perform Foundational Data, ML, and AI Tasks in Google Cloud](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/tree/a9d1c32355fbf3017be2ac190a25c8539880b42a/Perform%20Foundational%20Data%2C%20ML%2C%20and%20AI%20Tasks%20in%20Google%20Cloud)
  
 
