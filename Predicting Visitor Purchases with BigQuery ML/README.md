@@ -512,7 +512,7 @@ Result
 ![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/6c0a5d76-5dac-4e36-82b1-9dd15a0dc1b8)
 
 
-With this new model you now get a roc_auc of 0.91 which is significantly better than the first model.
+With this new model you now get a roc_auc of 0.909 which is significantly better than the first model.
 
 Now that you have a trained model, time to make some predictions.
 
@@ -767,7 +767,7 @@ SELECT * EXCEPT(unique_session_id) FROM (
 ![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/d471f51c-491f-4484-9e90-24b0b1fef3da)
 
 
-Our roc_auc has increased by about .02 to around .94!
+Our roc_auc has increased by about 0.90 to around 0.92!
 
 Your exact values will differ due to the randomness involved in the training process.
 It’s a small change in the roc_auc, but note that since 1 is a perfect roc_auc, it gets more difficult to improve the metric the closer to 1 it gets.
