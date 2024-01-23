@@ -55,7 +55,11 @@ FROM visitors, purchasers
 ```
 
 3. Click Run
-4. The result: 2.69%
+The result: 2.69%
+
+![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/d9a40407-9d68-4947-a6f9-af95429a09f7)
+   
+
 
 **Question: What are the top 5 selling products?**
 
@@ -76,7 +80,8 @@ LIMIT 5;
 
 The result:
 
-![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/f01abedf-900a-43b9-a0d5-2444ad73b863)
+![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/cd7b5a33-71dc-4f45-8a3f-473ae754ab59)
+
 
 
 **Question: How many visitors bought on subsequent visits to the website?**
@@ -101,15 +106,20 @@ GROUP BY will_buy_on_return_visit
 ```
 
 
-The results:
+The result:
 
-![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/99f3efe5-e999-454c-a1a2-cb4cf40a9949)
+![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/be8c8893-52ff-48cc-a33b-dbf85e499119)
 
 
-Analyzing the results, you can see that (11873 / 729848) = 1.6% of total visitors will return and purchase from the website. This includes the subset of visitors who bought on their very first session and then came back and bought again
+- Analyzing the results, you can see that (11873 / 729848) = 1.6% of total visitors will return and purchase from the website. This includes the subset of visitors who bought on their very first session and then came back and bought again
 
 **What are some of the reasons a typical ecommerce customer will browse but not buy until a later visit? Choose all that could apply**
 
+- The customer wants to comparison shop on other sites before making a purchase decision
+check
+- The customer is waiting for products to go on sale or other promotion
+check
+- The customer is doing additional research
 
 
 This behavior is very common for luxury goods where significant up-front research and comparison is required by the customer before deciding (think car purchases) but also true to a lesser extent for the merchandise on this site (t-shirts, accessories, etc).
@@ -129,6 +139,10 @@ Your team decides to test whether these two fields are good inputs for your clas
 `totals.timeOnSite` (how long the visitor was on our website)
 
 ** What are the risks of only using the above two fields?**
+
+- Whether a user bounces is highly correlated with their time on site (e.g. 0 seconds)
+close
+- Only using time spent on the site ignores other potential useful columns (features)
 
 
 Machine learning is only as good as the training data that is fed into it. If there isn't enough information for the model to determine and learn the relationship between your input features and your label (in this case, whether the visitor bought in the future) then you will not have an accurate model. While training a model on just these two fields is a start, you will see if they're good enough to produce an accurate model.
@@ -166,24 +180,26 @@ Results:
 ![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/18b3279a-10ab-42e6-be21-e7cab3fcc228)
 
 
+![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/19e8fbb7-9db9-4823-98ad-39db12202750)
+
+
+
 **Which fields are the model features? What is the label (correct answer)?**
 
-
+- The features are bounces and time_on_site. The label is will_buy_on_return_visit
 
 
 **Which fields are known after a visitor's first session?** 
 
-
+-bounces
+-time_on_site
+-visitId
 
 **Which field isn't known until later in the future after their first session?**
 
-bounces
+- will_buy_on_return_visit
 
-will_buy_on_return_visit
 
-visitId
-
-time_on_site
 
 - **Discussion**: will_buy_on_return_visit is not known after the first visit. Again, you're predicting for a subset of users who returned to your website and purchased. Since you don't know the future at prediction time, you cannot say with certainty whether a new visitor comes back and purchases. The value of building a ML model is to get the probability of future purchase based on the data gleaned about their first session.
 
@@ -203,6 +219,11 @@ Next, create a new BigQuery dataset which will also store your ML models.
 - Leave the other values at their defaults.
 3. Click Create dataset.
 
+
+![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/924e28ec-96a3-4e62-87a8-e25e9064acdd)
+
+
+
 ## Task 4. Select a BigQuery ML model type and specify options
 
 Now that you have your initial features selected, you are now ready to create your first ML model in BigQuery.
@@ -212,10 +233,9 @@ There are the two model types to choose from:
 ![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/c4020df8-412c-4db3-adec-1f74518f015c)
 
 
-
 **Which model type should you choose that will buy or won't buy?**
 
-
+- Classification model (like logistic_reg etc.
 
 1. Enter the following query to create a model and specify model options:
 
@@ -255,15 +275,18 @@ FROM
 ```
 
 2. Next, click Run to train your model.
-Wait for the model to train (5 - 10 minutes).
 
-- Note: You cannot feed all of your available data to the model during training since you need to save some unseen data points for model evaluation and testing. To accomplish this, add a WHERE clause condition is being used to filter and train on only the first 9 months of session data in your 12 month dataset.
-After your model is trained, you will see the message "This statement created a new model named qwiklabs-gcp-xxxxxxxxx:ecommerce.classification_model".
+![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/ba0a0690-9228-4493-85bc-f16177136242)
+
 
 3. Click Go to model.
 Look inside the ecommerce dataset and confirm `classification_model` now appears.
 
 Next, you will evaluate the performance of the model against new unseen evaluation data.
+
+
+![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/3bef7334-86eb-4ea4-91d3-33144da15aed)
+
 
 
 ## Task 5. Evaluate classification model performance
@@ -404,7 +427,10 @@ A key new feature that was added to the training dataset query is the maximum ch
 
 As an aside, the web analytics dataset has nested and repeated fields like ARRAYS which need to be broken apart into separate rows in your dataset. This is accomplished by using the UNNEST() function, which you can see in the above query.
 
-Wait for the new model to finish training (5-10 minutes).
+
+![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/c5bd658f-63c5-40f7-937a-60a1e14b3347)
+
+
 
 2. Evaluate this new model to see if there is better predictive power by running the below query:
 
@@ -480,9 +506,9 @@ SELECT * EXCEPT(unique_session_id) FROM (
 ));
 ```
 
-Output
+Result
 
-![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/75269a21-734a-4274-abab-7cd32cfad65e)
+![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/6c0a5d76-5dac-4e36-82b1-9dd15a0dc1b8)
 
 
 With this new model you now get a roc_auc of 0.91 which is significantly better than the first model.
@@ -569,6 +595,11 @@ Your model will now output the predictions it has for those July 2017 ecommerce 
 - predicted_will_buy_on_return_visit: whether the model thinks the visitor will buy later (1 = yes)
 - predicted_will_buy_on_return_visit_probs.label: the binary classifier for yes / no
 - predicted_will_buy_on_return_visit_probs.prob: the confidence the model has in it's prediction (1 = 100%)
+
+
+![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/bfe0f11f-25bd-4ade-b6de-5913e141b28c)
+
+
 
 ## Results
 
