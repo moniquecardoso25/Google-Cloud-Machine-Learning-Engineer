@@ -55,4 +55,5 @@ Listen closely, understand deeply. Transcribe audio with precision, analyze sent
 
 ![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/984edd84-c2ff-42ad-bf73-f5dae6ced42c)
 
-## 2. Predictiing (https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/tree/92d2ad642f93c17c73e499681c7872bfffa7719e/Predicting%20Visitor%20Purchases%20with%20BigQuery%20ML)
+## 2. [Predicting Visitor Purchases with BigQuery ML](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/tree/92d2ad642f93c17c73e499681c7872bfffa7719e/Predicting%20Visitor%20Purchases%20with%20BigQuery%20ML)
+
