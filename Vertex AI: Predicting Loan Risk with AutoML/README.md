@@ -13,13 +13,14 @@
    3. Model Serving
 - Evaluate the model performance.
 - Deploy the model to an endpoint.
-- Get predictions.
+- Get predictions
+  
  
-      ![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/f26297d3-b3c5-4726-a8b3-317aef9fcc8c)
+    ![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/f26297d3-b3c5-4726-a8b3-317aef9fcc8c)
 
 
 
-      ![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/cc988545-3a56-42a4-bb12-0b0acf8917b5)
+    ![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/cc988545-3a56-42a4-bb12-0b0acf8917b5)
 
 
 
