@@ -11,6 +11,9 @@
    1. Data Preparation
    2. Model Development
    3. Model Serving
+- Evaluate the model performance.
+- Deploy the model to an endpoint.
+- Get predictions.
  
       ![image](https://github.com/moniquecardoso25/Google-Cloud-Machine-Learning-Engineer/assets/140358716/f26297d3-b3c5-4726-a8b3-317aef9fcc8c)
 
